@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/app_bar_main">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""/>
+
+    <TextView
+        android:id="@+id/dados"
+        android:layout_width="wrap_content"
+        android:layout_height="26dp"
+        android:layout_marginBottom="59dp"
+        android:layout_marginEnd="155dp"
+        android:layout_marginLeft="164dp"
+        android:layout_marginRight="155dp"
+        android:layout_marginStart="164dp"
+        android:layout_marginTop="27dp"
+        android:text="DADOS"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/view"
+        android:layout_width="237dp"
+        android:layout_height="223dp"
+        android:layout_marginBottom="55dp"
+        android:layout_marginEnd="73dp"
+        android:layout_marginLeft="74dp"
+        android:layout_marginRight="73dp"
+        android:layout_marginStart="74dp"
+        android:layout_marginTop="59dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/bt_inicio"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dados">
+
+        <TextView
+            android:id="@+id/nome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nome"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/sobrenome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sobrenome"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/formacao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Formação"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/idade"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Idade"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/telefone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Telefone"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Data de Nascimento"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/bt_inicio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="55dp"
+        android:layout_marginLeft="74dp"
+        android:layout_marginRight="55dp"
+        android:layout_marginStart="74dp"
+        android:layout_marginTop="220dp"
+        android:text="INÍCIO"
+        app:layout_constraintBottom_toBottomOf="@+id/bt_calcular"
+        app:layout_constraintEnd_toStartOf="@+id/bt_calcular"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/bt_calcular"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/bt_calcular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="76dp"
+        android:layout_marginEnd="73dp"
+        android:layout_marginLeft="55dp"
+        android:layout_marginRight="73dp"
+        android:layout_marginStart="55dp"
+        android:text="CALCULAR"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/bt_inicio" />
+
+</android.support.constraint.ConstraintLayout>
