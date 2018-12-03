@@ -6,7 +6,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context=".MainActivity"
-    tools:showIn="@layout/app_bar_main">
+    tools:showIn="@layout/app_bar_main"
+    android:background="#FFE4E1">
 
     <TextView
         android:layout_width="wrap_content"
@@ -29,7 +30,8 @@
         app:layout_constraintBottom_toTopOf="@+id/view"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="#FFF0F5"/>
 
     <LinearLayout
         android:id="@+id/view"
@@ -45,7 +47,8 @@
         app:layout_constraintBottom_toTopOf="@+id/bt_inicio"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/dados">
+        app:layout_constraintTop_toBottomOf="@+id/dados"
+        android:background="#FFF0F5">
 
         <TextView
             android:id="@+id/nome"
@@ -105,7 +108,8 @@
         app:layout_constraintEnd_toStartOf="@+id/bt_calcular"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/bt_calcular"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="1.0"
+        android:background="#FFAEB9"/>
 
     <Button
         android:id="@+id/bt_calcular"
@@ -119,6 +123,7 @@
         android:text="CALCULAR"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/bt_inicio" />
+        app:layout_constraintStart_toEndOf="@+id/bt_inicio"
+        android:background="#FFAEB9"/>
 
 </android.support.constraint.ConstraintLayout>

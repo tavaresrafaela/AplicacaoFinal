@@ -2,10 +2,10 @@
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:background="#FFE4E1"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.lourdinas.finalaplication.calculadoramedia">
+    tools:context="com.lourdinas.finalaplication.calculadoramedia"
+    android:background="#FFE4E1">
 
     <TextView
         android:id="@+id/calcularmedia"
@@ -19,7 +19,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.507"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="#FFF0F5"/>
 
     <TextView
         android:id="@+id/nota1"
@@ -30,7 +31,8 @@
         android:text="1º Nota:"
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/calcularmedia" />
+        app:layout_constraintTop_toBottomOf="@+id/calcularmedia"
+        android:background="#FFF0F5"/>
 
     <TextView
         android:id="@+id/nota2"
@@ -41,7 +43,8 @@
         android:text="2º Nota:"
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/nota1" />
+        app:layout_constraintTop_toBottomOf="@+id/nota1"
+        android:background="#FFF0F5"/>
 
     <TextView
         android:id="@+id/nota3"
@@ -52,7 +55,8 @@
         android:text="3º Nota:"
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/nota2" />
+        app:layout_constraintTop_toBottomOf="@+id/nota2"
+        android:background="#FFF0F5"/>
 
     <TextView
         android:id="@+id/nota4"
@@ -63,7 +67,8 @@
         android:text="4° Nota:"
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/nota3" />
+        app:layout_constraintTop_toBottomOf="@+id/nota3"
+        android:background="#FFF0F5"/>
 
     <Button
         android:id="@+id/btn_calcular"
@@ -72,7 +77,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="248dp"
-        android:background="#DB7093"
+        android:background="#FFAEB9"
         android:text="Calcular"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -90,7 +95,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_calcular"
-        app:layout_constraintVertical_bias="0.408" />
+        app:layout_constraintVertical_bias="0.408"
+        android:background="#FFF0F5"/>
 
     <LinearLayout
         android:id="@+id/linearLayout"

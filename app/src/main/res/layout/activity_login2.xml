@@ -5,7 +5,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".login2">
+    tools:context=".login2"
+    android:background="#FFE4E1">
 
     <ImageView
         android:id="@+id/image"
@@ -21,7 +22,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@android:color/holo_red_light" />
+        android:background="#FFAEB9"/>
 
     <TextView
         android:id="@+id/tx_nome"
@@ -35,7 +36,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.41"
         app:layout_constraintStart_toEndOf="@+id/image"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="#FFF0F5"/>
 
     <EditText
         android:id="@+id/edit_formacao"
@@ -50,7 +52,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edit_sobrenome" />
+        app:layout_constraintTop_toBottomOf="@+id/edit_sobrenome"
+        />
 
     <Button
         android:id="@+id/bt_salvar"
@@ -65,7 +68,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/edit_idade"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="1.0"
+        android:background="#FFAEB9"/>
 
     <EditText
         android:id="@+id/edit_sobrenome"

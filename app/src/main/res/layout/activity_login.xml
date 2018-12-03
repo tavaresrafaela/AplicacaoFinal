@@ -4,7 +4,7 @@ xmlns:app="http://schemas.android.com/apk/res-auto"
 xmlns:tools="http://schemas.android.com/tools"
 android:layout_width="match_parent"
 android:layout_height="match_parent"
-tools:context=".login">
+tools:context=".login" android:background="#FFE4E1">
 
 <EditText
     android:id="@+id/edit_nome"
@@ -22,7 +22,8 @@ tools:context=".login">
     app:layout_constraintHorizontal_bias="0.503"
     app:layout_constraintStart_toStartOf="parent"
     app:layout_constraintTop_toTopOf="parent"
-    app:layout_constraintVertical_bias="0.701" />
+    app:layout_constraintVertical_bias="0.701"
+    android:background="#FFF0F5"/>
 
 <EditText
     android:id="@+id/edit_senha"
@@ -37,7 +38,8 @@ tools:context=".login">
     app:layout_constraintBottom_toTopOf="@+id/bt_login"
     app:layout_constraintEnd_toEndOf="parent"
     app:layout_constraintHorizontal_bias="0.503"
-    app:layout_constraintStart_toStartOf="parent" />
+    app:layout_constraintStart_toStartOf="parent"
+    android:background="#FFF0F5"/>
 
 <Button
     android:id="@+id/bt_login"
@@ -49,7 +51,10 @@ tools:context=".login">
     android:text="LOGIN"
     app:layout_constraintBottom_toBottomOf="parent"
     app:layout_constraintEnd_toStartOf="@+id/bt_cadastro"
-    app:layout_constraintStart_toStartOf="parent" />
+    app:layout_constraintStart_toStartOf="parent"
+    android:layout_marginLeft="48dp"
+    android:layout_marginRight="8dp"
+    android:background="#FFAEB9"/>
 
 <Button
     android:id="@+id/bt_cadastro"
@@ -62,5 +67,7 @@ tools:context=".login">
     app:layout_constraintBottom_toBottomOf="parent"
     app:layout_constraintEnd_toEndOf="parent"
     app:layout_constraintTop_toBottomOf="@+id/edit_senha"
-    app:layout_constraintVertical_bias="0.445" />
+    app:layout_constraintVertical_bias="0.445"
+    android:layout_marginRight="68dp"
+    android:background="#FFAEB9"/>
 </android.support.constraint.ConstraintLayout>
